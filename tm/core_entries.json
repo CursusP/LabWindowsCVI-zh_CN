@@ -1,0 +1,1364 @@
+{
+ "_meta": {
+  "desc": "CVI 汉化 · 核心界面词条表（第一批，人工校订）",
+  "action": {
+   "translate": "翻译并打补丁",
+   "keep": "保留原文（不应翻译）",
+   "confirm": "歧义，待确认"
+  },
+  "constraint": "译文 GBK 字节长度必须 <= 原文 ASCII 字节长度（原地覆盖，不改动二进制结构）"
+ },
+ "entries": [
+  {
+   "src": "Build Project",
+   "zh": "生成工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "New Project",
+   "zh": "新建工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "New Project (no save)",
+   "zh": "新建工程(不保存)",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Open Project",
+   "zh": "打开工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Open Project (no save)",
+   "zh": "打开工程(不保存)",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Save Project",
+   "zh": "保存工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Close Project",
+   "zh": "关闭工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Add To Project",
+   "zh": "添加到工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Remove From Project",
+   "zh": "从工程中移除",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Include In Build",
+   "zh": "包含到生成中",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Exclude From Build",
+   "zh": "从生成中排除",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Build IW Program",
+   "zh": "生成 IW 程序",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Run IW",
+   "zh": "运行IW",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Run IW (no save)",
+   "zh": "运行 IW(不保存)",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Clear IW",
+   "zh": "清除 IW",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Append Line To IW",
+   "zh": "向 IW 追加行",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Run Project",
+   "zh": "运行工程",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Run Project (no save)",
+   "zh": "运行工程(不保存)",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Compile File",
+   "zh": "编译文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Create Object File",
+   "zh": "创建目标文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Create Executable",
+   "zh": "创建可执行文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Create Objects For All Compilers",
+   "zh": "为所有编译器创建目标文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Command Line",
+   "zh": "设置命令行",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Compiler Defines",
+   "zh": "设置编译宏定义",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Executable Path",
+   "zh": "设置可执行路径",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Terminate Execution",
+   "zh": "终止执行",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Continue Execution",
+   "zh": "继续执行",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Suspend Execution",
+   "zh": "暂停执行",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Save All",
+   "zh": "全部保存",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Save File",
+   "zh": "保存文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Open FP File",
+   "zh": "打开FP文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Open Source File",
+   "zh": "打开源文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Close Source File",
+   "zh": "关闭源文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Update File From Disk",
+   "zh": "从磁盘更新文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Print Files In Project",
+   "zh": "打印工程文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Print Source File",
+   "zh": "打印源文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Load Instrument",
+   "zh": "装载仪器",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Unload Instrument",
+   "zh": "卸载仪器",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Close Function Panel",
+   "zh": "关闭函数面板",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Show Function Panel",
+   "zh": "显示函数面板",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Identify FP File",
+   "zh": "标识函数面板文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Rename FP Function",
+   "zh": "重命名函数面板函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Paste FP Function",
+   "zh": "粘贴函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Cut FP Function",
+   "zh": "剪切函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Copy FP Function",
+   "zh": "复制函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set FP Param Value",
+   "zh": "设置参数值",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get FP Param Value",
+   "zh": "获取参数值",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get FP Param Name",
+   "zh": "获取参数名",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get FP Param Datatype",
+   "zh": "获取参数类型",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get Next FP Function",
+   "zh": "获取下一个函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Build Function",
+   "zh": "生成函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Warning Boxes",
+   "zh": "设置警告框",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Change Instr Name",
+   "zh": "更改仪器名",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Fake Keystrokes",
+   "zh": "模拟按键",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Keystroke Interval",
+   "zh": "设置按键间隔",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get Num Keystrokes",
+   "zh": "获取按键次数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get File Name",
+   "zh": "获取文件名",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get Num Project Files",
+   "zh": "获取工程文件数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get Exclusion State",
+   "zh": "获取排除状态",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Does File Have Changes",
+   "zh": "文件是否已更改",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "String Value:",
+   "zh": "字符串值：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Numeric Value:",
+   "zh": "数值：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Selected Files:",
+   "zh": "已选文件：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Directory &History:",
+   "zh": "目录历史(&H)：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Object Name:",
+   "zh": "对象名称：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Module Name:",
+   "zh": "模块名称：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Input UI File:",
+   "zh": "输入界面文件：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Menu item:",
+   "zh": "菜单项：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Color Name:",
+   "zh": "颜色名称：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Image file path:",
+   "zh": "图像文件路径：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Stack dump:",
+   "zh": "堆栈转储：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Available options:",
+   "zh": "可用选项：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Unknown option:",
+   "zh": "未知选项：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Available commands:",
+   "zh": "可用命令：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Available UI Objects:",
+   "zh": "可用界面对象：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Menubars in user interface file:",
+   "zh": "界面文件中的菜单栏：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Color Map:",
+   "zh": "颜色映射：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Subfile Type:",
+   "zh": "子文件类型：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Ink Set:",
+   "zh": "墨水集合：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Sample Format:",
+   "zh": "采样格式：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Fax Data:",
+   "zh": "传真数据:",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Ink Names:",
+   "zh": "墨水名称：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Compression Scheme:",
+   "zh": "压缩方案：",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Delete",
+   "zh": "删除",
+   "cat": "按钮/通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "D&one",
+   "zh": "&完成",
+   "cat": "按钮",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Re&move All",
+   "zh": "全部移除",
+   "cat": "按钮",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "&Remove",
+   "zh": "&移除",
+   "cat": "按钮",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Indent",
+   "zh": "缩进",
+   "cat": "按钮/通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Button",
+   "zh": "按钮",
+   "cat": "控件类型",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Static",
+   "zh": "静态",
+   "cat": "控件类型",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Edit",
+   "zh": "编辑",
+   "cat": "按钮/通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Colors",
+   "zh": "颜色",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Misc",
+   "zh": "其他",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Type",
+   "zh": "类型",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Const",
+   "zh": "常量",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Enum",
+   "zh": "枚举",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Invoke",
+   "zh": "调用",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Release",
+   "zh": "释放",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "This",
+   "zh": "自身",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Control",
+   "zh": "控件",
+   "cat": "控件类型",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Insertable",
+   "zh": "可插入",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Unknown",
+   "zh": "未知",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Function",
+   "zh": "函数",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Class",
+   "zh": "类",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Patch",
+   "zh": "补丁",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "None",
+   "zh": "无",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Extended",
+   "zh": "扩展",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Standard",
+   "zh": "标准",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Disabled",
+   "zh": "禁用",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Aggressive",
+   "zh": "激进",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "自动保存策略档位，也可译“积极”"
+  },
+  {
+   "src": "Conservative",
+   "zh": "保守",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Watchpoints",
+   "zh": "监视点",
+   "cat": "调试",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Function parameters",
+   "zh": "函数参数",
+   "cat": "调试",
+   "action": "translate"
+  },
+  {
+   "src": "Local variables",
+   "zh": "局部变量",
+   "cat": "调试",
+   "action": "translate"
+  },
+  {
+   "src": "Global variables",
+   "zh": "全局变量",
+   "cat": "调试",
+   "action": "translate"
+  },
+  {
+   "src": "Backup File",
+   "zh": "备份文件",
+   "cat": "通用",
+   "action": "translate"
+  },
+  {
+   "src": "Original File",
+   "zh": "原始文件",
+   "cat": "通用",
+   "action": "translate"
+  },
+  {
+   "src": "AutoSaving Now",
+   "zh": "正在自动保存",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "No File Selected",
+   "zh": "未选择文件",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Error",
+   "zh": "错误",
+   "cat": "提示",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Unknown error",
+   "zh": "未知错误",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Building project files.",
+   "zh": "正在生成工程文件。",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "The function succeeded.",
+   "zh": "函数调用成功。",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Type library is not valid.",
+   "zh": "类型库无效。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Type library not found.",
+   "zh": "未找到类型库。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Breakpoint does not exist.",
+   "zh": "断点不存在。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Cannot resume when not suspended.",
+   "zh": "未暂停时无法继续。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Could not create the distribution.",
+   "zh": "无法创建发布包。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "An invalid parameter was passed.",
+   "zh": "传入了无效参数。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Invalid project version info selector.",
+   "zh": "工程版本信息选择子无效。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "This error code is obsolete.",
+   "zh": "此错误码已废弃。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Insufficient memory available.",
+   "zh": "可用内存不足。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Pathname not absolute.",
+   "zh": "路径不是绝对路径。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Invalid pathname syntax.",
+   "zh": "路径语法无效。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Invalid warning level.",
+   "zh": "警告级别无效。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Invalid configuration.",
+   "zh": "配置无效。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected path type.",
+   "zh": "意外的路径类型。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Bad path.",
+   "zh": "路径错误",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected build state.",
+   "zh": "意外的生成状态。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected dialog state.",
+   "zh": "意外的对话框状态。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected run state.",
+   "zh": "意外的运行状态。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Previous panel not found.",
+   "zh": "未找到前一面板。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Next panel not found.",
+   "zh": "未找到后一面板。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unterminated argument string.",
+   "zh": "参数字符串未结束。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected argument format.",
+   "zh": "意外的参数格式。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unexpected character when parsing.",
+   "zh": "解析时出现意外字符。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "No line tag available.",
+   "zh": "无可用行标记。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Couldn't open file for writing.",
+   "zh": "无法打开文件进行写入。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Read failed.",
+   "zh": "读取失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Seek failed.",
+   "zh": "定位失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Stat failed.",
+   "zh": "状态失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Overflow.",
+   "zh": "溢出。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Render failed.",
+   "zh": "渲染失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "CoCreateInstance failed.",
+   "zh": "CoCreateInstance 调用失败。",
+   "cat": "错误信息",
+   "action": "keep",
+   "note": "含 COM 接口名，按“保留 API 名称”原则不译；如需本地化仅追加说明"
+  },
+  {
+   "src": "Unexpected number of bytes read.",
+   "zh": "读取的字节数异常。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to allocate array.",
+   "zh": "分配数组失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to size handle.",
+   "zh": "调整句柄大小失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to create property browser.",
+   "zh": "创建属性浏览器失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to get temp path",
+   "zh": "获取临时路径失败",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "No Image Present",
+   "zh": "无图像",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Unsupported compression scheme",
+   "zh": "不支持的压缩方案",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Invalid Transfer Mode",
+   "zh": "传输模式无效",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Processor Architecture",
+   "zh": "处理器架构",
+   "cat": "通用",
+   "action": "confirm",
+   "note": "单词/枚举值，可能同时作为 Win32 窗口类名、配置值或标识符被复用，需动态确认后再翻译"
+  },
+  {
+   "src": "Attribute no longer exists",
+   "zh": "属性已不存在",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Software",
+   "zh": "Software",
+   "cat": "注册表项",
+   "action": "keep",
+   "note": "注册表键名，翻译会导致配置读取失败"
+  },
+  {
+   "src": "Path",
+   "zh": "Path",
+   "cat": "注册表项",
+   "action": "keep",
+   "note": "环境变量/键名"
+  },
+  {
+   "src": "CLSID",
+   "zh": "CLSID",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "COM 注册表键"
+  },
+  {
+   "src": "Mime",
+   "zh": "Mime",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "MIME 数据库键"
+  },
+  {
+   "src": "Hardware",
+   "zh": "Hardware",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "设备管理器节点名"
+  },
+  {
+   "src": "Interface",
+   "zh": "Interface",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "注册表键"
+  },
+  {
+   "src": "Component Categories",
+   "zh": "Component Categories",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "COM 注册表键"
+  },
+  {
+   "src": "System64Folder",
+   "zh": "System64Folder",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "Windows Installer 属性名"
+  },
+  {
+   "src": "System16Folder",
+   "zh": "System16Folder",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "Windows Installer 属性名"
+  },
+  {
+   "src": "NISHAREDDIR",
+   "zh": "NISHAREDDIR",
+   "cat": "系统标识",
+   "action": "keep",
+   "note": "NI 环境变量名"
+  },
+  {
+   "src": "IsBoolTD(tdh, tdo)",
+   "zh": "IsBoolTD(tdh, tdo)",
+   "cat": "内部断言",
+   "action": "keep",
+   "note": "调试断言原文"
+  },
+  {
+   "src": "IsItemExposed (treePtr, index)",
+   "zh": "IsItemExposed (treePtr, index)",
+   "cat": "内部断言",
+   "action": "keep"
+  },
+  {
+   "src": "Exit CVI",
+   "zh": "退出 CVI",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get CVI State",
+   "zh": "获取 CVI 状态",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Set Unload DLLs",
+   "zh": "设置卸载 DLL",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Open UIR File",
+   "zh": "打开 UIR 文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Print UIR File",
+   "zh": "打印 UIR 文件",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Print UIR File To",
+   "zh": "打印 UIR 文件到",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Print Source File To",
+   "zh": "打印源文件到",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Identify FP Function",
+   "zh": "标识函数面板函数",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Get FP Param Proto Name",
+   "zh": "获取参数原型名",
+   "cat": "菜单命令",
+   "action": "translate"
+  },
+  {
+   "src": "Bad Index for StdGraph",
+   "zh": "图形索引无效",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Bad Index for StdGraphCursor",
+   "zh": "图形游标索引无效",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Cursor out of range.",
+   "zh": "光标超出范围。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Cursor image not in cursor table.",
+   "zh": "光标图像不在光标表中。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "The method you called is obsolete.",
+   "zh": "所调用的方法已废弃。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "NULL pointer passed.",
+   "zh": "传入了空指针。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "NULL terminator not found.",
+   "zh": "未找到字符串结束符。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to allocate new data object.",
+   "zh": "分配新数据对象失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Trying to get array item into NULL buffer.",
+   "zh": "尝试将数组元素取到空缓冲区。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Continuation lines not found in output string",
+   "zh": "输出字符串中未找到续行",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "NULL pointer passed as number of lines",
+   "zh": "行数被传为空指针",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "SaveAsText failed.",
+   "zh": "SaveAsText 失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "CreateStreamOnHGlobal failed.",
+   "zh": "CreateStreamOnHGlobal 失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "QueryInterface failed.",
+   "zh": "QueryInterface 失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "GetFormFromContainer failed.",
+   "zh": "GetFormFromContainer 失败。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "DdePostAdvise failed",
+   "zh": "DdePostAdvise 失败",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Failed to find unused DDE connection slot.",
+   "zh": "未找到可用的 DDE 连接槽。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Exceeding hard limit on state stack size.",
+   "zh": "状态栈大小超出硬限制。",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Breakpoint Error: Missing breakpoint Id!!!",
+   "zh": "断点错误: 缺少断点 ID!!!",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Breakpoint Error: Incomplete source info!!!",
+   "zh": "断点错误: 源信息不完整!!!",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Breakpoint Error: Missing skip count!!!",
+   "zh": "断点错误: 缺少跳过计数!!!",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "Breakpoint Error: Unknown breakpoint!!!",
+   "zh": "断点错误: 未知断点!!!",
+   "cat": "错误信息",
+   "action": "translate"
+  },
+  {
+   "src": "New image for system clipboard",
+   "zh": "系统剪贴板的新图像",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Updating host text clipboard",
+   "zh": "正在更新宿主文本剪贴板",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Available information:",
+   "zh": "可用信息:",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Licensing:",
+   "zh": "授权:",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "Program:",
+   "zh": "程序:",
+   "cat": "对话框标签",
+   "action": "translate"
+  },
+  {
+   "src": "ERROR:",
+   "zh": "错误:",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Error:",
+   "zh": "错误:",
+   "cat": "提示",
+   "action": "translate"
+  },
+  {
+   "src": "Windows 7",
+   "zh": "Windows 7",
+   "cat": "不应翻译",
+   "action": "keep"
+  },
+  {
+   "src": "Windows Vista",
+   "zh": "Windows Vista",
+   "cat": "不应翻译",
+   "action": "keep"
+  },
+  {
+   "src": "Windows XP",
+   "zh": "Windows XP",
+   "cat": "不应翻译",
+   "action": "keep"
+  },
+  {
+   "src": "National Instruments",
+   "zh": "National Instruments",
+   "cat": "不应翻译",
+   "action": "keep"
+  }
+ ]
+}

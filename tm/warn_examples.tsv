@@ -1,0 +1,89 @@
+﻿1882	void foo (char *b)\r\n{\r\n    *b = 0;\r\n}\r\n\r\nvoid bar(unsigned char *d)\r\n{\r\n    foo(d); // 此处有警告 \r\n}
+1885	void foo (int b, int c)\r\n{\r\n    int d;\r\n    return;\r\n\r\n    d = b + c; // 此处有警告 \r\n}
+1888	void foo(int a, int b)\r\n{\r\n    int i; \r\n    i = 100 << 10+2;   // 此处有警告 \r\n    if (a = b)     // 此处有警告 \r\n        return;\r\n}
+1891	int foo()\r\n{\r\n    int bar; // 此处有警告 \r\n    return 0;\r\n}
+1894	int foo(int b)\r\n{\r\n    int c;\r\n    return b + c; // 此处有警告 \r\n}
+1897	int foo(int b)\r\n{\r\n    return b / 0; // 此处有警告 \r\n}
+1900	int foo()\r\n{\r\n    int bar[25];\r\n    return bar[25]; // 此处有警告 \r\n}
+1903	int foo()\r\n{\r\n    int a[2];\r\n    int i = 0;\r\n    a[i] = i++; // 此处有警告 \r\n    return 0;\r\n}
+1906	void foo()\r\n{\r\n    *(int*)0 = 0; // 此处有警告 \r\n}
+1909	volatile int foo(int y); // 此处有警告 \r\nconst int bar(int y);    // 此处有警告
+1915	#include <cvirte.h>\r\n#include <userint.h>\r\n\r\n#define  PANEL 1 \r\n\r\nvoid init()\r\n{\r\n    DisplayPanel(PANEL); // 此处有警告 \r\n}
+1918	int foo()\r\n{\r\n    unsigned int bar = 0;\r\n    if (bar < 0) // 此处有警告 \r\n        return 0;\r\n}
+1921	int foo(int x)\r\n{\r\n    if (x); // 此处有警告 \r\n    return 0;\r\n}
+1927	#define C1 \"foo_bar_foo_bar_foo_bar_foo_bar\"\r\n#define C2 C1 C1 C1 C1 C1 C1 C1 C1 C1 C1\r\n#define C3 C2 C2 C2 C2 C2  C2 C2 C2 C2 C2\r\nconst char foo[] = C3 C3 C3 C3 C3 C3; // 此处有警告
+1930	int *foo(char *ch)\r\n{\r\n    return (int *)ch; // 此处有警告 \r\n}
+1933	void fatal_foo()\r\n{ // 此处有警告 \r\n    exit(1);\r\n}
+1936	int foo() __attribute__((noreturn));\r\n\r\nint foo()\r\n{\r\n    return 0; // 此处有警告 \r\n}
+1939	void foo()\r\n{\r\n    int i = 0;\r\n    for(int j = 0; j < 10; ++j)\r\n    {\r\n        int i = j; // 此处有警告 \r\n        ++i;\r\n    }\r\n}
+1942	void foo(int bar)\r\n{\r\n    switch(bar)\r\n    {\r\n        case 22222222222222222222222222222222222222: // 此处有警告 \r\n            break;\r\n    }\r\n}
+1945	enum Alpha\r\n{\r\n    A = 0,\r\n    B,\r\n    C\r\n};\r\n\r\nvoid foo(enum Alpha a)\r\n{\r\n    switch(a) // 此处有警告 \r\n    {\r\n        case A:\r\n            break;\r\n        case B:\r\n            break;\r\n    }\r\n}
+1951	void foo()\r\n{\r\nlabel: // 此处有警告 \r\n    return;\r\n}
+1957	int foo()\r\n{\r\n    return 0,1,2,3; // 此处有警告 \r\n}
+1960	int foo (int bar __attribute__((unused)))\r\n{\r\n    return bar; // 此处有警告 \r\n}
+1963	void foo(double bar)\r\n{\r\n    float c = bar; // 此处有警告 \r\n}
+1966	int foo(int a, unsigned b)\r\n{\r\n    return a < b; // 此处有警告 \r\n}
+1969	int foo[200];\r\nint bar(char c)\r\n{\r\n    return foo[c]; // 此处有警告 \r\n}
+1972	void foo(int bar)\r\n{\r\n    bar = 0;\r\n    int x; // 此处有警告 \r\n}
+1975	typedef void (*foo_type)(int);\r\n\r\nvoid foo()\r\n{\r\n    foo_type f;\r\n    void* voidPtr = f; // 此处有警告\r\n}
+1978	int foo(float x, float y)\r\n{\r\n    return x == y; // 此处有警告 \r\n}
+1981	void foo(int bar)\r\n{\r\n    int x[bar]; // 此处有警告 \r\n}
+1984	int __export j;\r\nint __import j; // 此处有警告
+1990	int foo () __attribute__ ((deprecated));\r\nint (*bar)() = foo; // 此处有警告 
+1993	struct foo\r\n{\r\n    int x; // 此处有警告 \r\n    char y;\r\n} __attribute__((packed)) bar;
+1996	struct foo\r\n{\r\n    char ch;\r\n    int x; // 此处有警告 \r\n};\r\n\r\nvoid test()\r\n{\r\n    struct foo bar;\r\n}
+2002	void foo()\r\n{\r\n    float bar;\r\n    printf(\"%d\", bar); // 此处有警告 \r\n}
+2008	void foo()\r\n{\r\n    printf(\"bar\"); // 此处有警告 \r\n}
+2011	void foo()\r\n{\r\n    fprintf(0, \"bar\"); // 此处有警告\r\n}
+2014	typedef struct // 此处有警告 \r\n{\r\n    int foo;\r\n};
+2017	struct foo\r\n{\r\n    int x;\r\n    char ch;\r\n};\r\n\r\n\r\nvoid test()\r\n{\r\n    struct foo bar = {10}; // 此处有警告 \r\n}
+2056	void foo(const int *bar)\r\n{\r\n    int *x = bar + 1; // 此处有警告 \r\n}
+2059	void foo(int a) { }\r\n\r\nvoid bar()\r\n{\r\n    unsigned int b;\r\n    foo(b); // 此处有警告 \r\n}
+2068	#define foo 300\r\n#pragma GCC poison foo // 此处有警告
+2071	#define foo 0\r\n#define foo 1 // 此处有警告
+2083	int foo[] = {\r\n    [0] = 1,\r\n    [1] = 3,\r\n    [2 ... 5] = 0 // 此处有警告 \r\n};
+2086	void foo(const char *ch) __attribute__((nonnull(1)));\r\n\r\nvoid bar()\r\n{\r\n    foo(0); // 此处有警告 \r\n}
+2092	void foo(void) {\r\n    extern void f();\r\n}\r\nvoid bar() {\r\n    f();  // 此处有警告 \r\n}
+2095	extern unsigned int foo(int bar);\r\nstatic unsigned int foo(int bar); // 此处有警告
+2098	void foo(int bar)\r\n{\r\n    bar = 22222222222222222222222222222222222222; // 此处有警告 \r\n}
+2101	void foo()\r\n{\r\n    #warning \"bar\" // 此处有警告 \r\n}
+2104	#if foo // 此处有警告 \r\n#endif
+2119	struct foo\r\n{\r\n    char x, z;\r\n    struct\r\n    {\r\n        int x; // 此处有警告\r\n        float y;\r\n    };\r\n};
+2122	struct foo\r\n{\r\n    union\r\n    {\r\n        int bar;\r\n    } // 此处有警告 \r\n}
+2125	int foo(x, y) int x, y;\r\n{\r\n     return x + y; \r\n}\r\n\r\nvoid bar(void)\r\n{\r\n    foo(1, 2, 3); // 此处有警告 \r\n}
+2134	int foo()\r\n{\r\n    return 2 << 1000; // 此处有警告 \r\n}
+2143	typedef struct {\r\n    int x;\r\n    int y[];\r\n} foo;\r\n\r\ntypedef struct {\r\n    foo w; // 此处有警告\r\n    foo z[];\r\n} bar;
+2149	void test()\r\n{\r\n    void(*obj1)() = &test;\r\n    void(*obj2)() = &test;\r\n\r\n    if (obj1 < obj2) { } // 此处有警告 \r\n    else if (obj1 == obj2) { }\r\n}
+2152	void foo()\r\n{\r\n    void(*obj1)() = &foo;\r\n    void *obj2 = 0;\r\n\r\n    if (obj1 < obj2) { } // 此处有警告 \r\n}
+2155	char* foo()\r\n{\r\n    char x = 0;\r\n    return &x; // 此处有警告 \r\n}
+2167	void foo()\r\n{\r\n    int a[0]; // 此处有警告 \r\n}
+2173	struct A\n{\n    struct b\n    {\n        int x;\n    } B;\n};\n\nint foo(struct A {\n            struct b { // 此处有警告\n                int x;\n            } B;\n        } * s);
+2176	#if -1 < 1u // 此处有警告 \r\n#endif
+2185	typedef struct foo\r\n{\r\n    unsigned int a, b;\r\n    double c;\r\n    unsigned char d;\r\n    float e;\r\n    unsigned int f:8,\r\n        g:7,\r\n        h:3;\r\n} FOO;\r\n\r\nvoid test()\r\n{\r\n    FOO bar = { .d = 19, 1, 1, 0, .a = 2, 1, 1, 2, .a = 6, .a = 11, }; // 此处有警告\r\n}
+2191	int main(int argc) // 此处有警告 \r\n{\r\n    return 0;\r\n}
+2194	void warn_nested_parallel_block (int x)\r\n{\r\n#pragma omp parallel\r\n    {\r\n#pragma omp parallel // 此处有警告\r\n        {\r\n            printf(\"hello world\");\r\n        }\r\n    }\r\n}
+2197	void warn_repeated_ordered (int x)\r\n{\r\n    int y = 0;\r\n#pragma omp for ordered\r\n    for(y = 0; y < 4; y++)\r\n    {\r\n#pragma omp ordered\r\n        x = 5;\r\n#pragma omp ordered // 此处有警告\r\n        x = 5;\r\n    }\r\n}
+2200	void foo(int x) { }\r\n\r\nvoid bar()\r\n{\r\n    int x = 3;\r\n    foo(&x); // 此处有警告 \r\n}
+2203	void foo(long long bar)\r\n{\r\n    int c = bar; // 此处有警告 \r\n}
+2206	void foo(int *x) { }\r\n\r\nvoid bar()\r\n{\r\n    char x = 3;\r\n    foo(&x); // 此处有警告 \r\n}
+2209	int foo()\r\n{\r\n    return; // 此处有警告\r\n}
+2212	void foo()\r\n{\r\n    return 0; // 此处有警告\r\n}
+2215	void foo()\r\n{\r\n    short short int i = 0; // 此处有警告 \r\n}
+2218	void foo(short x);\r\nvoid foo(x)\r\n    short x; // 此处有警告\r\n{\r\n}
+2221	void foo(); // 此处有警告\r\nvoid foo(x) // 此处有警告\r\n    int x;\r\n{\r\n}
+2224	#include <ansi_c.h>\r\nvoid foo(int x, int y, ...)\r\n{\r\n    va_list p_arg;\r\n    va_start(p_arg, x); // 此处有警告\r\n}
+2227	#define my_macro(a,b) a##b\r\n\r\nstruct\r\n{\r\n    int two;\r\n} one;\r\n\r\nvoid foo(void)\r\n{\r\n    my_macro(one, .two) = 10; // 此处有警告\r\n}
+2230	struct foo { \r\n int a; \r\n double b []; // 此处有警告 \r\n}; \r\n
+2233	typedef enum\n{\n    One = 1,\n    Two,\n    Three\n} MyNum;\n\nMyNum E = 5; // 此处有警告
+2236	int foo(void)\n{\n    return 65537 * 65537; // 此处有警告\n}
+2239	void *foo(short s)\n{   \n    return (void*)s; // 此处有警告\n}
+2245	int foo(int a[10]) \n{\n    return sizeof(a); // 此处有警告\n}
+2248	char s[8];\n\nvoid foo()\n{\n    char *d;\n \n    d = s + 80; // 此处有警告\n    d = s - 1; // 此处有警告\n}
+2251	int foo();\n\nvoid bar()\n{\n    float f;\n    f = (float)foo(); // 此处有警告\n}
+2254	int foo(enum { A, B } a)\n{\n    switch (a)\n    {\n        case A:\n            return 0;\n        case B:\n            return 1;\n        default: // 此处有警告\n            return 2;\n    }\n}
+2257	enum A\n{\n    A1 = 0,\n    A2 = -1,\n    A3, // 此处有警告\n    A4\n};
+2260	void foo()\n{\n    int i;\n    int j = 0;\n\n    for(i = 0; i < 1; ) // 此处有警告\n        j++;\n}
+2263	void foo(void) {\n    int x;\n    char s[10];\n\n    x = sizeof(s - 20); // 此处有警告\n}
+2266	#include <ansi_c.h>\n\nvoid foo(char *s)\n{\n    char d[10];\n\n    strncat(d,\n            \"AAAAAAAAAAAAAAAAAAAAAAAAAAA\",\n            sizeof(d)); // 此处有警告\n}
+2275	#define a b\n#define b a\n\nint a; // 此处有警告
+2278	void foo(int a, int b, int c, int d)\n{\n    if (a)\n        if (b)\n        {\n            c++;\n        }\n        else // 此处有警告\n            d++;\n}

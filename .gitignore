@@ -1,0 +1,38 @@
+# 生成的补丁载荷（含厂商二进制，不入库）
+payload/
+
+# 安装时自动产生的原始文件备份
+backup/
+# 批处理安装器记录的备份来源，避免把旧版本备份写回新安装
+backup_source.txt
+
+# 构建中间产物
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 工作中间产物（导出的待译清单、逐批草稿）
+work/
+
+# 构建时的源解包副本
+build/chm_src/
+build/chm_verify/
+build/chm_out/
+out/
+
+# 临时验证目录
+tmp/
+
+# Nuitka 打包产物
+dist/
+*.build/
+*.dist/
+*.onefile-build/

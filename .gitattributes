@@ -1,0 +1,29 @@
+# 统一换行与二进制标记
+# 目的：.bat 必须保持 CRLF（即使在 Linux/macOS 克隆或网页 ZIP 下载后），
+#      文本类统一 LF，二进制不参与任何换行转换。
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+*.py   text eol=lf
+*.tsv  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
+
+# 二进制（禁止换行/编码转换）
+*.chm  binary
+*.exe  binary
+*.dll  binary
+*.lib  binary
+*.pdb  binary
+*.ico  binary
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.zip  binary
+
+# 译文表含中文，告知 GitHub 按文本处理并正确统计
+*.tsv  linguist-language=TSV

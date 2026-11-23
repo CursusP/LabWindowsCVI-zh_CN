@@ -1,0 +1,7 @@
+# 打包 dist/LabWindowsCVI-zh_CN-Setup.exe 所需。
+# 必须装在 Python 3.8.x 解释器里 —— 3.9 起不支持 Windows 7，用更高版本打包出的
+# exe 无法在 Win7 上启动。安装示例：
+#   py -3.8 -m pip install -r requirements-build.txt
+Nuitka==4.3.5
+zstandard==0.23.0
+pefile==2024.8.26
