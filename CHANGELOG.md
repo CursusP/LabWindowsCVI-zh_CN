@@ -64,3 +64,13 @@
 - 只改写 `.rdata` / `.data` 段内的字符串字面量与 `cvimsgs.txt`，不改 PE 结构与 `.text` 代码段。
 - 译文 GBK 字节数不得超过原文字面量长度，超长条目在生成阶段被拒绝并记入清单。
 - 系统「非 Unicode 程序的语言」必须是中文(简体，中国)，否则界面乱码。
+
+**发布后修订（2026-11-23）**
+
+- `LICENSE` 只保留 MIT 正文，原先附在其后的适用范围说明移入 `NOTICE` 的 A 节。
+  此前 GitHub 将该文件识别为 “Other”，修订后可正确显示为 MIT。
+- `tools/setup.py` 的退出码说明与实际返回值对齐：未找到 CVI 返回 1，
+  3 仅表示载荷生成失败或备份不可用。
+- 更正 README 校验一节：`patch.py verify` 只读 `payload\`，不需要英文原版 `cvimsgs.txt`。
+- 新增 GitHub Actions 工作流（`.github/workflows/ci.yml`），在 Python 3.8 与 3.12
+  下检查脚本语法与译文表格式。

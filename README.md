@@ -189,8 +189,9 @@ python tools\msgpatch.py verify --src "C:\Program Files (x86)\National Instrumen
 python tools\stats.py                    :: 覆盖率与体积统计
 ```
 
-`lint_tm.py` 不依赖 CVI，可在任意机器上运行；`tmcheck.py`、`patch.py`、`msgpatch.py`
-需要本机存在英文原版 `cvimsgs.txt`（安装程序生成的备份即可满足）。
+`lint_tm.py` 与 `patch.py verify` 只读仓库内文件，不需要 CVI，可在任意机器上运行；
+`tmcheck.py` 与 `msgpatch.py verify --src` 需要本机存在英文原版 `cvimsgs.txt`
+（安装程序生成的备份即可满足）。
 
 ## 8. 仓库结构
 
@@ -213,6 +214,7 @@ LabWindowsCVI-zh_CN/
 ├─ tm/*.tsv                 译文表，唯一人工维护的数据
 ├─ assets/icon.ico          安装程序图标
 ├─ docs/                    术语表、覆盖率、原理、未译清单
+├─ .github/workflows/ci.yml 语法与译文表自动检查
 ├─ build.bat                生成载荷
 ├─ install.bat              备份并写入
 ├─ restore.bat              还原英文

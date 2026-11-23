@@ -1,0 +1,32 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: python ${{ matrix.python }}
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.8", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      # 打包用的解释器是 3.8，同时校验较新版本，避免用到高版本才有的语法
+      - name: 语法检查
+        run: python -m py_compile tools/*.py
+
+      # 只依赖 tm/ 自身，不需要 CVI，也不需要 pefile
+      - name: 译文表检查
+        run: python tools/lint_tm.py
