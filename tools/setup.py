@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """安装器入口（Nuitka 打包成单文件 exe）。
 
-双击 = 安装；`Setup.exe --restore` = 还原英文。
+双击 = 安装；`--restore` = 还原英文。
 负责：定位 CVI → 确认未在运行 → 生成载荷 → 备份 → 写入 → 汇报结果。
 载荷与备份放在 %LOCALAPPDATA%\\LabWindowsCVI-zh_CN\\，不依赖 exe 所在目录
 （exe 常被放在下载目录甚至临时目录，卸载风险高）。
@@ -343,7 +343,7 @@ def install(cvi, base):
 
     if is_patched(cvi):
         print("\n[提示] 该安装目录已经是汉化状态。")
-        print("       如需重装，请先运行：Setup.exe --restore")
+        print("       如需重装，请先运行：%s --restore" % (os.path.basename(sys.argv[0]) or "本程序"))
         return 1
 
     warn = check_meta(base, cvi)

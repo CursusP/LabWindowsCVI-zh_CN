@@ -3,14 +3,14 @@
 """从本地 LabWindows/CVI 安装生成 payload/。
 
 设计原则：仓库不附带任何 NI 二进制文件。使用者用自己的安装副本生成补丁载荷，
-再由 install.bat（或 Setup.exe）写入安装目录。既避免再分发厂商二进制，
+再由 install.bat（或安装程序）写入安装目录。既避免再分发厂商二进制，
 也保证载荷与本地版本完全一致。
 
 用法：
     python tools/make_payload.py --cvi "C:/Program Files (x86)/National Instruments/CVI2015"
 不给 --cvi 时按 CVI_ROOT 环境变量 → 注册表 → Program Files 的顺序自动探测。
 
-本模块同时被 Setup.exe 调用：build() 是纯函数，不启动子进程。
+本模块同时被安装程序调用：build() 是纯函数，不启动子进程。
 """
 import argparse
 import json

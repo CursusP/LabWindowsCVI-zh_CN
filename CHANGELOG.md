@@ -14,7 +14,7 @@
 
 **安装与还原**
 
-- 单文件安装程序 `LabWindowsCVI-zh_CN-Setup.exe`（约 5 MB）：双击安装，
+- 单文件安装程序 `LabWindowsCVI-zh_CN-v1.0-x64.exe`（约 5 MB）：双击安装，
   `--restore` 还原英文，`--cvi` 指定非默认安装目录，`--yes` 供脚本调用。
 - 安装程序基于 CPython 3.8.10 构建，可在 Windows 7 SP1（64 位，需 KB2533623）、
   Windows 8.1、10、11 上运行；内置 Python 运行时与 Visual C++ 运行库。

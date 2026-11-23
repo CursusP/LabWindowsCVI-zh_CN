@@ -51,9 +51,9 @@
 
 ### 3.1 使用单文件安装程序（推荐）
 
-1. 从本仓库 Releases 页面下载 `LabWindowsCVI-zh_CN-Setup.exe`（约 5 MB）。
+1. 从本仓库 Releases 页面下载 `LabWindowsCVI-zh_CN-v1.0-x64.exe`（约 5 MB）。
 2. 可选：核对文件完整性。在 PowerShell 中执行
-   `Get-FileHash .\LabWindowsCVI-zh_CN-Setup.exe -Algorithm SHA256`，
+   `Get-FileHash .\LabWindowsCVI-zh_CN-v1.0-x64.exe -Algorithm SHA256`，
    与 Release 页面给出的 SHA256 一致后再运行。
 3. 双击运行。程序自动定位 CVI 安装目录，读取本机文件生成补丁，备份原始文件，
    随后写回安装目录，通常在 2 秒内完成。
@@ -106,7 +106,7 @@ restore.bat
 也可以直接执行：
 
 ```bat
-LabWindowsCVI-zh_CN-Setup.exe --restore
+LabWindowsCVI-zh_CN-v1.0-x64.exe --restore
 ```
 
 原始文件备份位于 `%LOCALAPPDATA%\LabWindowsCVI-zh_CN\backup\`，请勿删除。
@@ -175,7 +175,7 @@ build.bat "C:\Program Files (x86)\National Instruments\CVI2015"
 py -3.8 tools\build_exe.py
 ```
 
-产物为 `dist\LabWindowsCVI-zh_CN-Setup.exe`。脚本会检查解释器版本、图标与译文表，
+产物为 `dist\LabWindowsCVI-zh_CN-v1.0-x64.exe`。脚本会检查解释器版本、图标与译文表，
 并使用 `--onefile`、`--mingw64`、`--disable-ccache` 等固定参数，
 把 `tm\` 译文表一并打包（安装时需要在目标机器上重新生成载荷）。
 
@@ -197,7 +197,7 @@ python tools\stats.py                    :: 覆盖率与体积统计
 ```
 LabWindowsCVI-zh_CN/
 ├─ tools/
-│  ├─ setup.py              安装程序入口（打包为 Setup.exe）
+│  ├─ setup.py              安装程序入口（打包为单文件 exe）
 │  ├─ build_exe.py          Nuitka 打包脚本
 │  ├─ make_payload.py       从本机安装生成补丁载荷
 │  ├─ patch.py              改写 exe/dll 中的字符串字面量

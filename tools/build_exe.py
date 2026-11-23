@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""用 Nuitka 打包单文件安装程序 dist/LabWindowsCVI-zh_CN-Setup.exe。
+"""用 Nuitka 打包单文件安装程序 dist/LabWindowsCVI-zh_CN-v<版本>-x64.exe。
 
 必须在**目标运行时**的解释器里执行，因为 Nuitka 使用当前解释器自带的
 CPython 头文件、静态库和运行时 DLL：
@@ -24,8 +24,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ICON = os.path.join(ROOT, "assets", "icon.ico")
 TM_DIR = os.path.join(ROOT, "tm")
 ENTRY = os.path.join(ROOT, "tools", "setup.py")
-OUT_NAME = "LabWindowsCVI-zh_CN-Setup.exe"
 VERSION = "1.0.0.0"
+# 产物名带版本与架构：下载目录里能区分新旧，32 位机器看到 x64 即知需改用 bat
+OUT_NAME = "LabWindowsCVI-zh_CN-v%s-x64.exe" % ".".join(VERSION.split(".")[:2])
 
 
 def check_env(strict=True):

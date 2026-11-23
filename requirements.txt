@@ -1,3 +1,3 @@
-# 生成补丁载荷（build.bat / install.bat / Setup.exe 内部）所需的唯一第三方库。
+# 生成补丁载荷（build.bat / install.bat / 安装程序内部）所需的唯一第三方库。
 # pefile 2024.8.26 为当前最新版，仍支持 Python 3.6+，可装在 3.8 上。
 pefile==2024.8.26
